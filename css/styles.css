@@ -44,7 +44,7 @@ body {
 
 .header-logo {
    font-family: Raleway, sans-serif;
-   font-weight: bold;
+   font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
    letter-spacing: 0.03em;
@@ -65,7 +65,8 @@ body {
    color: var(--main-color-text);
 }
 .header-nav-link:hover,
-.header-nav-link:focus {
+.header-nav-link:focus,
+.header-nav-link.current {
    color: var(--accent-color-text);
 }
 .header-contact-link {
@@ -100,11 +101,16 @@ body {
    line-height: 1.87;
    text-align: center;
    letter-spacing: 0.06em;
+   cursor: pointer;
+   background: var(--accent-btn);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
    color: var(--third-color-text);
 }
 .hero-btn:hover, 
 .hero-btn:focus {
    color: var(--accent-color-text);
+   background: var(--main-btn);
 }
 
 
@@ -137,7 +143,7 @@ body {
 }
 .team-item-text {
    font-size: 16px;
-   line-height: 1/19;
+   line-height: 1.19;
    text-align: center;
    letter-spacing: 0.03em;
    color: var(--second-color-text);
@@ -172,6 +178,9 @@ body {
 .footer-item-local:focus {
    color: var(--accent-color-text);
 }
+.footer-adres {
+   font-style: normal;
+}
 .footer-adres-link {
    font-size: 14px;
    line-height: 1.71;
@@ -196,11 +205,10 @@ body {
    background: var(--main-btn);
    color: var(--main-color-text);
 }
+
+.portfolio-nav-button.active,
 .portfolio-nav-button:hover,
 .portfolio-nav-button:focus {
-   color: var(--accent-color-text);
-}
-.portfolio-nav-button.active {
    color: var(--third-color-text);
    background: var(--accent-btn);
 }
